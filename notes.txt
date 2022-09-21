@@ -1,0 +1,2 @@
+# archivo .env.local
+Son variables de entorno, .local significa que sera variables que se usen en el entorno de desarrollo
