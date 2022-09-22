@@ -1,0 +1,36 @@
+.cripto {
+    position: relative;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    border-left: 6px solid skyblue;
+    padding: 1rem;
+}
+
+.cripto h1 {
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.rank {
+    position: absolute;
+    color: skyblue;
+    opacity: 0.5;
+    font-size: 4rem;
+    right: 1rem;
+    bottom: -1.8rem;
+}
+
+.info {
+    color: rgb(191, 191, 191);
+}
+
+.label {
+    color: skyblue;
+}
+
+.positivo {
+    color: greenyellow;
+}
+
+.negativo {
+    color: rgba(255, 17, 0, 0.932);
+}

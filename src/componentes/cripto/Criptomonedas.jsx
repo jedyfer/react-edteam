@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import axios from "axios";  //  npm add axios
-import "./App.css";
+import "./Criptomonedas.css";
+import Criptos from "./Criptos";
 
-function App() {
+function Criptomonedas() {
 
   const API_URL = import.meta.env.VITE_API_URL;
   const [criptos, setCriptos] = useState();
-
 
   /* se ejecutara solo una vez */
   useEffect(() => {
@@ -30,15 +30,23 @@ function App() {
   if (!criptos) return <span>Cargando...</span>
 
   return (
-    <>
-      <h1>Lista de Criptomonedas</h1>
-      <ol>
-        { criptos.map((c, i) => (
-          <li key={i}>Nombre: { c.name } Precio : { c.priceUsd } </li>
+    <div className="app-container">
+      <h1 className="app-title"><span className="line">Rank de Criptomonedas</span></h1>
+      <div className="crypto-container">
+        { criptos.map(({id, rank, name, priceUsd, symbol, changePercent24Hr}, i) => (
+          <Criptos 
+            key={ i } 
+            id={ id } 
+            rank={ rank } 
+            nombre={ name } 
+            precio={ priceUsd } 
+            simbolo={ symbol } 
+            variacion={ changePercent24Hr } 
+          />
         )) }
-      </ol>
-    </>
+      </div>
+    </div>
   )
 }
 
-export default App
+export default Criptomonedas

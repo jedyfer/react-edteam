@@ -1,0 +1,28 @@
+.home-container {
+    width: 100%;
+    text-align: center;
+}
+
+.home-title {
+    font-weight: 600;
+}
+
+.home-container p {
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 1.5rem;
+}
+
+.link {
+    display: inline-block;
+    background: none;
+    border: 2px solid #fff;
+    color: skyblue;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.link:hover {
+    color: #fff;
+    box-shadow: 1px;
+}
+

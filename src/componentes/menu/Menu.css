@@ -1,0 +1,23 @@
+.main-menu {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.main-menu ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main-menu a {
+    color: #fff;
+}
+
+.main-menu a:hover {
+    color: skyblue;
+}
