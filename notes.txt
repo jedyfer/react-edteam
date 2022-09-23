@@ -4,4 +4,11 @@ Son variables de entorno, .local significa que sera variables que se usen en el 
 # API cryptos
 https://docs.coincap.io/#ee30bea9-bb6b-469d-958a-d3e35d442d7a
 
-# React router
+# API login (pruebas)
+https://reqres.in/
+
+# Código EDteam
+https://github.com/edteamlat/proyecto-react-2022
+
+# Deploy
+https://vercel.com/

@@ -9,6 +9,7 @@ import Criptomonedas from './componentes/cripto/Criptomonedas'
 import CriptoPage from './componentes/cripto/details/CriptoPage'
 import { UserContextProvider } from './componentes/context/UserContext'
 import Perfil from './componentes/perfil/Perfil'
+import Login from './componentes/login/Login'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   /* React router */
@@ -25,8 +26,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/criptomonedas" element={<App />}>
           {/* index : /criptomonedas */}
           <Route index element={<Criptomonedas />} />
-          <Route path=':id' element={<CriptoPage />} />
+          <Route path=":id" element={<CriptoPage />} />
         </Route>
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<_404 />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,65 @@
+.login-container {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    max-width: 480px;
+    margin: auto;
+    background: rgba(53, 51, 51, 0.164);
+    border: 3px solid rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-weight: 600;
+    color: skyblue;
+}
+
+.field {
+    padding: 0.7rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.field input {
+    width: 100%;
+    background: none;
+    color: skyblue;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    padding: 0.3rem;
+}
+
+.submit {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.submit input {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: none;
+    color: skyblue;
+    font-size: 16px;
+}
+
+.submit input:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.error {
+    width: 100%;
+    background: tomato;
+    margin-top: 1rem;
+    line-height: 3;
+    padding: 0.25rem 2rem;
+    border-radius: .25rem;
+}
