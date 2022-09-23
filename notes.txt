@@ -12,3 +12,5 @@ https://github.com/edteamlat/proyecto-react-2022
 
 # Deploy
 https://vercel.com/
+
+- npm run build
