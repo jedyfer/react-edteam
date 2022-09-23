@@ -1,7 +1,13 @@
+import { useContext } from "react"
 import { NavLink } from "react-router-dom"
+import { UserContext } from "../context/UserContext"
 import "./Menu.css"
 
 function Menu() {
+
+  /* de esta forma se usa la data del context */
+  const user = useContext(UserContext);
+
   return (
     <nav className="main-menu">
         <ul>
@@ -9,7 +15,8 @@ function Menu() {
             {/* btw <Link /> no peude estar fuera del <BrowserRouter> */}
             {/* <Link> <NavLink/> diferencia uno es para cualquier link y el otro especializado en nav del menu */}
             <li><NavLink to="/">Inicio</NavLink></li>
-            <li><NavLink to="/criptomonedas">Criptomonedas</NavLink></li>
+            <li><NavLink to="/criptomonedas">Lista de criptos</NavLink></li>
+            <li><NavLink to="/perfil">Perfil </NavLink></li>
         </ul>
     </nav>
   )

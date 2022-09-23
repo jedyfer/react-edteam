@@ -1,9 +1,6 @@
-function CriptoDetails({ cripto }) {
+import { parseFloatNumber } from './../../../helpers/numbers'
 
-    const parseFloatNumber = (num, dec) => (
-        parseFloat(num).toFixed(dec)
-    );
-
+function CriptoInfo({ cripto }) {
     return (
         <div className="cripto-info">
             <div className="main-info">
@@ -43,4 +40,4 @@ function CriptoDetails({ cripto }) {
     )
 }
 
-export default CriptoDetails
+export default CriptoInfo
